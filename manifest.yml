@@ -1,0 +1,7 @@
+applications:
+  - name: rundeck
+    command: "./start.sh"
+    buildpack: "https://github.com/nota-ja/heroku-buildpack-runnable-jar.git#cf-100-day-challenge-095"
+    memory: 1536m
+    services:
+      - mysql-rundeck
